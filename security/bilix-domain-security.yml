@@ -1,0 +1,26 @@
+generated: '2026-09-28'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: equityzen.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Feb 11 23:59:59 2027 GMT
+  hsts: null
+- host: www.bilix.com
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Dec  9 11:25:30 2026 GMT
+  hsts: false
+domains:
+- domain: equityzen.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
+- domain: bilix.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false
